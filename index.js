@@ -1,4 +1,4 @@
-console.log("Drum Kit");
+console.log("JavaScript Mini Project : Drum Kit");
 
 var numberOfButtons = document.querySelectorAll(".button").length;
 
