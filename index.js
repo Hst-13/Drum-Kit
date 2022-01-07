@@ -37,7 +37,7 @@ function sound(key) {
     break;
 
     case "j":
-    var sound5 = new Audio('Sound/CH.wav');
+    var sound5 = new Audio('Sound/CH.mp3');
     sound5.play();
     break;
 

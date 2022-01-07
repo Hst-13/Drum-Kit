@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Kalam:wght@300;400;700&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Kalam:wght@300;400;700&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 html {
   font-size: 16px;
@@ -33,7 +32,7 @@ p {
 div {
   margin: 0;
   padding: 0;
-  width: 40%;
+  width: auto;
   display: grid;
   grid-template-areas:
     "cymbal clap cowbell"
@@ -46,7 +45,7 @@ button {
   border: 2px solid black;
   width: 4em;
   height: 4em;
-  margin: 0 0 1rem 1rem;
+  margin: 0.25rem;
   background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
@@ -113,4 +112,9 @@ button:hover {
   grid-area: tom2;
   background-image: url(Icons/BigTom.png);
   background-position-y: -6px;
+}
+
+.animation {
+  box-shadow: 0 0 10px 1px black;
+  filter: brightness(90%);
 }
