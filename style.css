@@ -16,7 +16,7 @@ body {
   height: 100%;
   display: flex;
   flex-flow: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background-image: radial-gradient(lightblue, violet, aqua);
   background-size: cover;
@@ -27,6 +27,7 @@ p {
   font-size: 3rem;
   font-weight: 700;
   color: rgb(0, 0, 0);
+  margin-bottom: 1em;
 }
 
 div {
@@ -35,7 +36,7 @@ div {
   width: auto;
   display: grid;
   grid-template-areas:
-    "cymbal clap cowbell"
+    "cymbal cowbell clap"
     "oh ch tom"
     "snare kick tom2";
   grid-template-columns: 1fr 1fr 1fr;
@@ -45,7 +46,7 @@ button {
   border: 2px solid black;
   width: 4em;
   height: 4em;
-  margin: 0.25rem;
+  margin: 0.5em;
   background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
@@ -116,5 +117,65 @@ button:hover {
 
 .animation {
   box-shadow: 0 0 10px 1px black;
-  filter: brightness(90%);
+  filter: brightness(80%);
+}
+
+@media (max-width: 500px) {
+  div {
+    grid-template-areas:
+      "clap cowbell cymbal"
+      "tom tom2 oh"
+      "snare kick ch";
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0.25em;
+    color: transparent;
+    text-shadow: none;
+    background-size: contain;
+    justify-content: center;
+    background-position-y: 6px;
+  }
+
+  .d {
+    background-position-y: center;
+  }
+
+  .j {
+    background-position-y: 8px;
+  }
+
+  .s {
+    background-position-y: 12px;
+  }
+
+  .f {
+    background-position-y: 8px;
+  }
+
+  .h {
+    background-position-y: center;
+  }
+
+  @media (max-width: 300px) {
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      width: 2em;
+      height: 2em;
+      margin: 0.25em;
+      background-position-y: 6px;
+    }
+  }
 }
